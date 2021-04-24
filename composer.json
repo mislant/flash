@@ -1,0 +1,25 @@
+{
+  "name": "mislant/flash",
+  "description": "Helper for flash messages for users",
+  "type": "library",
+  "keywords": [
+    "flashes",
+    "helper"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kaliyev Kirill",
+      "email": "kiryakz2000@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "myclabs/php-enum": "^1.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mislant\\Flash\\": "src/"
+    }
+  }
+}
