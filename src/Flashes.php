@@ -11,10 +11,11 @@ namespace Mislant\Flash;
 /**
  * List of available flash messages
  *
- * @method static SUCCESS()
- * @method static ERROR()
- * @method static WARNING()
- * @method static INFO()
+ * @method static Flashes SUCCESS()
+ * @method static Flashes ERROR()
+ * @method static Flashes WARNING()
+ * @method static Flashes INFO()
+ * @method static Flashes NOTICE()
  *
  * @package Mislant\Flash
  */

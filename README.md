@@ -15,8 +15,8 @@ class [FlashGenerator](https://github.com/mislant/flash/blob/master/src/FlashGen
 public function someAction()
 {
     # here is some business logic
-    $flashGenerator = new \Mislant\Flash\FlashGenerator(
-        \Mislant\Flash\Setter\SetterInterface::class # your storage setter implementation
+    $flashGenerator = new FlashGenerator(
+        SetterInterface::class # your storage setter implementation
     );
     
     # end of business logic
@@ -34,8 +34,8 @@ public function someAction()
 ```php
 public function showAlerts()
 {
-    $flashExtractor = new \Mislant\Flash\FlashExtractor(
-        \Mislant\Flash\Getter\GetterInterface::class # your getter from storage implementation
+    $flashExtractor = new FlashExtractor(
+        GetterInterface::class # your getter from storage implementation
     );
     
    # Your render logic

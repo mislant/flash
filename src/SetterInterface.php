@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace Mislant\Flash\Setter;
+namespace Mislant\Flash;
 
 /**
  * Flash setter interface

@@ -4,7 +4,9 @@
  * @license MIT
  */
 
-namespace Mislant\Flash\Getter;
+declare(strict_types=1);
+
+namespace Mislant\Flash;
 
 /**
  * Flash getter interface
