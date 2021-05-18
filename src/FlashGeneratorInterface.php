@@ -26,7 +26,7 @@ interface FlashGeneratorInterface
      *
      * @return bool
      */
-    public function error(array $message): bool;
+    public function error(array|string $message): bool;
 
     /**
      * Information flash message
@@ -35,7 +35,7 @@ interface FlashGeneratorInterface
      *
      * @return bool
      */
-    public function info(array $message): bool;
+    public function info(array|string $message): bool;
 
     /**
      * Success flash message
@@ -44,7 +44,7 @@ interface FlashGeneratorInterface
      *
      * @return bool
      */
-    public function success(array $message): bool;
+    public function success(array|string $message): bool;
 
     /**
      * Warning flash message
@@ -53,7 +53,7 @@ interface FlashGeneratorInterface
      *
      * @return bool
      */
-    public function warning(array $message): bool;
+    public function warning(array|string $message): bool;
 
     /**
      * Notice flash message
@@ -62,5 +62,5 @@ interface FlashGeneratorInterface
      *
      * @return bool
      */
-    public function notice(array $message): bool;
+    public function notice(array|string $message): bool;
 }

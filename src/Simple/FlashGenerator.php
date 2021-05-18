@@ -49,15 +49,15 @@ final class FlashGenerator implements FlashGeneratorInterface
     /**
      * {@inheritdoc }
      */
-    public function error(array $message): bool
+    public function error(array|string $message): bool
     {
         return $this->set(Flashes::ERROR(), $message);
     }
 
     /**
-     * {@inheritdoc }
+     * {@inheritdoc }.4
      */
-    public function info(array $message): bool
+    public function info(array|string $message): bool
     {
         return $this->set(Flashes::INFO(), $message);
     }
@@ -65,7 +65,7 @@ final class FlashGenerator implements FlashGeneratorInterface
     /**
      * {@inheritdoc }
      */
-    public function success(array $message): bool
+    public function success(array|string $message): bool
     {
         return $this->set(Flashes::SUCCESS(), $message);
     }
@@ -73,7 +73,7 @@ final class FlashGenerator implements FlashGeneratorInterface
     /**
      * {@inheritdoc }
      */
-    public function warning(array $message): bool
+    public function warning(array|string $message): bool
     {
         return $this->set(Flashes::WARNING(), $message);
     }
@@ -81,7 +81,7 @@ final class FlashGenerator implements FlashGeneratorInterface
     /**
      * {@inheritdoc }
      */
-    public function notice(array $message): bool
+    public function notice(array|string $message): bool
     {
         return $this->set(Flashes::NOTICE(), $message);
     }
@@ -90,11 +90,11 @@ final class FlashGenerator implements FlashGeneratorInterface
      * Sets flash messages in storage
      *
      * @param Flashes $flash
-     * @param array $message
+     * @param string|string[] $message
      *
      * @return bool
      */
-    private function set(Flashes $flash, array $message): bool
+    private function set(Flashes $flash, array|string $message): bool
     {
         list ($message) = $message;
         return $this->flashSetter->set($flash->getValue(), $message);
