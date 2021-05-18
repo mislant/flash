@@ -1,4 +1,6 @@
-![](./flash.svg)
+<div style="display: flex;width: 100%;justify-content: center">
+<img src="./flash.svg" alt="flash">
+</div>
 
 # Flash messages helper.
 
@@ -29,7 +31,8 @@ public function someAction()
 }
 ```
 
-**To get flashes** use flash getter. You can also use base implementation class [FlashExtractor](https://github.com/mislant/flash/blob/master/src/FlashExtractorInterface.php)
+**To get flashes** use flash getter. You can also use base implementation
+class [FlashExtractor](https://github.com/mislant/flash/blob/master/src/FlashExtractorInterface.php)
 
 ```php
 public function showAlerts()

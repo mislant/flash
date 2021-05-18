@@ -4,7 +4,6 @@
  * @license MIT
  */
 
-
 declare(strict_types=1);
 
 namespace Mislant\Flash;
@@ -26,5 +25,5 @@ interface SetterInterface
      *
      * @return bool
      */
-    public function set(string $key, $message): bool;
+    public function set(string $key, string|array $message): bool;
 }

@@ -96,7 +96,6 @@ final class FlashGenerator implements FlashGeneratorInterface
      */
     private function set(Flashes $flash, array|string $message): bool
     {
-        list ($message) = $message;
         return $this->flashSetter->set($flash->getValue(), $message);
     }
 }
