@@ -1,5 +1,5 @@
 <div style="display: flex;width: 100%;justify-content: center">
-<img src="./flash.svg" alt="flash">
+<img src="https://raw.githubusercontent.com/mislant/flash/b451d7799e39c0aa4fcc02ac094ca6c2dc4f4c0f/flash.svg" alt="flash">
 </div>
 
 # Flash messages helper.
